@@ -1,6 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <uses-permission android:name="android.permission.INTERNET"/> <!-- Cellular -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> <!-- Wifi -->
+
     <application
-        android:label="learn_flutter_67_12"
+        android:label="Pixedlens"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

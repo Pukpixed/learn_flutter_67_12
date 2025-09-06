@@ -19,7 +19,7 @@ class _FirstScreenState extends State<FirstScreen> {
     super.initState();
     // เริ่มนับเวลาเปิด SecondScreen หลัง splash
     Timer(
-      const Duration(seconds: 3),
+      const Duration(seconds: 15),
       () => Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => const SecondScreen()),
@@ -67,7 +67,7 @@ class _FirstScreenState extends State<FirstScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image(image: AssetImage('assets/image/screen.png'), width: 200),
+              Image(image: AssetImage('assets/image/icon.png'), width: 200),
               SizedBox(height: 50),
               SpinKitSpinningLines(color: Colors.deepPurple, size: 50.0),
             ],
