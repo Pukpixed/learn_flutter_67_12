@@ -8,5 +8,8 @@ import 'firebase_options.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-  runApp(const MaterialApp(home: FirstScreen()));
+  runApp(
+    //step 6: Firestore CRUD Operations
+    const MaterialApp(home: FirstScreen(), debugShowCheckedModeBanner: false),
+  );
 }
